@@ -1,3 +1,5 @@
+##A simple and useful function to create quantiles##
+
 quantcut<- function(x, digits=6){ 
      cut( x, breaks=quantile(x),  
      include.lowest=TRUE, dig.lab = digits)
