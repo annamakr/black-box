@@ -1,5 +1,4 @@
 # black-box
-Ideas storage
 
 Hello,
 
