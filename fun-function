@@ -1,0 +1,24 @@
+fun<-function(n,m=3,v=2){
+    xi<-rnorm(n,m,v)
+    mean(xi)
+    g<-mean(xi)
+
+if(g>0){
+     yi<-rexp(n,1/g)
+}else{
+   yi<--(rexp(n,-(1/g)))
+}
+
+yi
+
+ abs(yi)>abs(xi)
+ K<-sum(abs(yi)>abs(xi))
+
+X<-as.list(xi)
+Y<-as.list(yi)
+k<-as.list(K)
+
+mylist<-list(X=xi,Y=yi,k=K)
+
+return(mylist)
+}
